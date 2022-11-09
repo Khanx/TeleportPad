@@ -53,8 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Teleporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teleporter.cs" />
+    <Compile Include="TeleportPadTracker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
