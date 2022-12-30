@@ -1,0 +1,15 @@
+[
+	{
+		"defaultLimit" : 0,
+		"defaultPriority" : -100,
+		"name" : "Khanx.player.TeleportPad",
+		"requires" : [
+			{"amount":2,"type":"stonebricks"},
+			{"amount":4,"type":"goldingot"},
+			{"amount":6,"type":"tabletwisdom"}
+		],
+		"results" : [
+			{"amount":2, "type":"Khanx.TeleportPadD"}
+		]
+	}
+]

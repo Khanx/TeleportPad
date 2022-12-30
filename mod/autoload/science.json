@@ -1,0 +1,25 @@
+[
+	{
+		"colonyPointRequirement": 500,
+		"dependencies": [
+			"pipliz.outposts"
+		],
+		"icon": "./icons/TeleportPad.png",
+		"itemRequirements": [
+			{
+				"amount": 20,
+				"type": "stonebricks"
+			},
+			{
+				"amount": 40,
+				"type": "goldingot"
+			},
+			{
+				"amount": 60,
+				"type": "tabletwisdom"
+			}
+		],
+		"key": "Khanx.TeleportPad",
+		"unlocksRecipes": ["Khanx.player.TeleportPad"]
+	}
+]

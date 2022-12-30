@@ -1,0 +1,18 @@
+{
+	"types":
+	{
+		"Khanx.TeleportPadD": "Teleport Pad"
+	},
+	"typeuses":
+	{
+		"Khanx.TeleportPadD": "Tired of walking from one place to another? Use a teleport platform."
+	},
+	"sentences": {
+		"Khanx": {
+			"TeleportPad": {
+				"description": "Unlocks TeleportPads used to teleport yourself (no colonist) from one TeleportPad to another.",
+				"name": "TeleportPads"
+			}
+		}
+	}
+}

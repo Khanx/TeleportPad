@@ -1,0 +1,29 @@
+{
+  "Khanx.TeleportPad" : {
+    "icon" : "./icons/TeleportPad.png",
+    "mesh" : "./meshes/teleportpad.ply",
+	"isSolid" : false,
+	"onPlaceAudio" : "woodPlace",
+	"onRemoveAudio" : "woodDeleteHeavy",
+	"onRemove": [
+			{
+				"amount": 1,
+				"type": "Khanx.TeleportPadD"
+			}
+		]
+  },
+    "Khanx.TeleportPadD" : {
+    "categories" : [
+		"tool",
+		"khanx"
+    ],
+	"customData": {
+			"colors":["#ffff00->#d40000"],
+	},
+    "icon" : "./icons/TeleportPad.png",
+    "mesh" : "./meshes/teleportpad.ply",
+	"isSolid" : false,
+	"onPlaceAudio" : "woodPlace",
+	"onRemoveAudio" : "woodDeleteHeavy"
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"types":
+	{
+		"Khanx.TeleportPadD": "Plataforma de Teletransporte"
+	},
+	"typeuses":
+	{
+		"Khanx.TeleportPadD": "¿Cansado de andar de un lado para otro? Usa una plataforma de teletransporte."
+	},
+	"sentences": {
+		"Khanx": {
+			"TeleportPad": {
+				"description": "Desbloquea las plataformas de teletransporte que te permiten teletransportarte (no colonos) de una plataforma de teletransporte a otra.",
+				"name": "Plataformas de Teletransporte"
+			}
+		}
+	}
+}

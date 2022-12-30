@@ -1,0 +1,38 @@
+[
+	{
+		"name": "TeleportPad",
+		"version": "0.1.0.0",
+		"enableddefault": true,
+		"description" : "The player will able to place teleport pads.",
+		"dllpath": "TeleportPad.dll",
+		"compatibleversions":
+			[
+				"0.9.0"
+			],
+		"jsonFiles" : [
+			{
+				"relativePath" : "./autoload/types.json",
+				"fileType" : "addNewTypes",
+				"index" : -1000000
+			},
+			{
+				"relativePath" : "./autoload/recipes.json",
+				"fileType" : "addOrReplacePlayerRecipes",
+				"index" : -1000000,
+			},
+			{
+				"fileType": "addOrOverrideLocalization",
+				"relativePath": "./autoload/localization/en-US/en-US.json"
+			},
+			{
+				"fileType": "addOrOverrideLocalization",
+				"relativePath": "./autoload/localization/es-ES/es-ES.json"
+			},
+			{
+				"fileType": "addScience",
+				"index": -1000000,
+				"relativePath": "./autoload/science.json"
+			},
+		]
+	}
+]

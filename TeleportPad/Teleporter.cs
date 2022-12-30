@@ -19,7 +19,7 @@ namespace TeleportPad
 
         public void OnPlayerMoved(Players.Player player, UnityEngine.Vector3 oldLocation)
         {
-            Vector3Int posDown = new Vector3Int(player.Position) + Vector3Int.down;
+            Vector3Int posDown = new Vector3Int(player.Position);// + Vector3Int.down;
 
             if (!teleportPadTracker.Positions.TryGetValue(posDown, out TeleportPadTracker.TeleportPad teleportPad))
                 return;

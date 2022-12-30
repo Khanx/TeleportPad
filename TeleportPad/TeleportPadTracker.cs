@@ -92,6 +92,7 @@ namespace TeleportPad
                         lastPlaced.Add((player.ID, teleportPad1.pair));
                         Chat.Send(player, "Removed Teleport Pad, next time that you place a Teleport Pad without disconnecting will connect the other pair of the one that you removed.");
                         ServerManager.TryChangeBlock(teleportPad1.pair, ItemTypes.GetType("Khanx.TeleportPadD"), player);   //Disabled Skin
+                        World.GetChunk(teleportPad1.pair.ToChunk()).SetDirty();
                     }
                     else
                         Chat.Send(player, "Removed Teleport Pad");
