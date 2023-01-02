@@ -1,5 +1,4 @@
-﻿using BlockEntities;
-using Chatting;
+﻿using Chatting;
 using ModLoaderInterfaces;
 using Pipliz;
 using System.Collections.Generic;
@@ -7,7 +6,7 @@ using System.Collections.Generic;
 namespace TeleportPad
 {
     [ModLoader.ModManager]
-    public class Teleporter : IOnPlayerMoved
+    public class Teleporter : IOnPlayerMoved, IOnTryChangeBlock
     {
         public static readonly long timeBetweenTeleport = 5000L;
         public static Dictionary<Players.PlayerID, (ServerTimeStamp, bool)> lastTeleport = new Dictionary<Players.PlayerID, (ServerTimeStamp, bool)>();
@@ -51,6 +50,16 @@ namespace TeleportPad
                 lastTeleport.Remove(player.ID);
 
             lastTeleport.Add(player.ID, (ServerTimeStamp.Now, false));
+        }
+
+        public void OnTryChangeBlock(ModLoader.OnTryChangeBlockData data)
+        {
+            if (data.TypeNew != BlockTypes.BuiltinBlocks.Types.air) { return; }
+            if (data.RequestOrigin.Type != BlockChangeRequestOrigin.EType.Colony) { return; }
+            if (!data.TypeOld.Name.Contains("Khanx.TeleportPad")) { return; }
+
+            data.CallbackState = ModLoader.OnTryChangeBlockData.ECallbackState.Cancelled;
+            data.InventoryItemResults.Clear();
         }
     }
 }
